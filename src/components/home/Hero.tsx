@@ -25,7 +25,7 @@ export default function Hero() {
               <><span key="r" className="text-rojo">sistemas</span> que hacen</>,
               "funcionar tu negocio.",
             ]}
-            className="font-display text-[11vw] font-black leading-[1] tracking-tight sm:text-[7vw] lg:text-[5.2rem]"
+            className="font-display text-[11vw] font-black leading-[1.15] tracking-tight sm:text-[7vw] lg:text-[5.2rem]"
           />
         </div>
 
@@ -42,7 +42,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsAppClick("hero-cta")}
-              className="inline-flex items-center rounded-full bg-rojo px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-rojo-soft"
+              className="inline-flex items-center rounded-full bg-cta px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-cta-soft"
             >
               Pedí tu demo gratis
             </MagneticButton>

@@ -41,7 +41,7 @@ export default function AnimatedLines({
   return (
     <Tag ref={ref} className={className}>
       {lines.map((line, i) => (
-        <span key={i} className="block overflow-hidden">
+        <span key={i} className="block overflow-hidden pb-[0.12em]">
           <span data-anim-line className={`block ${lineClassName ?? ""}`}>
             {line}
           </span>

@@ -16,9 +16,9 @@ export default function FinalCTA() {
         <h2 className="font-display text-5xl font-black uppercase leading-[0.95] tracking-tight sm:text-7xl">
           ¿Listo para
           <br />
-          recuperar
+          hacer crecer
           <br />
-          <span className="text-rojo">tus horas?</span>
+          <span className="text-rojo">tu negocio?</span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-base text-negro/70 sm:text-lg">
           Contanos qué hace tu negocio y te armamos una demo real, sin
@@ -32,7 +32,7 @@ export default function FinalCTA() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("final-cta")}
-            className="inline-flex items-center rounded-full bg-rojo px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-rojo-soft"
+            className="inline-flex items-center rounded-full bg-cta px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-cta-soft"
           >
             Pedí tu demo gratis
           </MagneticButton>

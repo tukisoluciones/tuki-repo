@@ -49,7 +49,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsAppClick("navbar")}
-            className="inline-flex items-center rounded-full bg-rojo px-5 py-2 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-rojo-soft"
+            className="inline-flex items-center rounded-full bg-cta px-5 py-2 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:bg-cta-soft"
           >
             Pedí tu demo
           </MagneticButton>
@@ -108,7 +108,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-2 rounded-xl bg-rojo px-4 py-3 text-center font-display text-sm font-bold uppercase tracking-wide text-crema"
+            className="mt-2 rounded-xl bg-cta px-4 py-3 text-center font-display text-sm font-bold uppercase tracking-wide text-crema"
           >
             Pedí tu demo
           </a>

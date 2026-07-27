@@ -58,7 +58,7 @@ export default function ServiciosPage() {
 
       <PageHeader
         eyebrow="Servicios"
-        title="Cuatro formas de devolverte horas."
+        title="Cuatro formas de hacer crecer tu negocio."
         description="Cada servicio resuelve una tarea que hoy te roba tiempo. Los podés contratar de a uno o combinados, según lo que necesite tu negocio."
       />
       {SERVICES.map((service) => (

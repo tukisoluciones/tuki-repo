@@ -7,6 +7,8 @@
   --color-negro-soft: #1d1d1d;
   --color-rojo: #0d3fe3;
   --color-rojo-soft: #3b5eff;
+  --color-cta: #ff6a2c;
+  --color-cta-soft: #ff8952;
 
   --font-display: var(--font-poppins), sans-serif;
   --font-sans: var(--font-manrope), sans-serif;

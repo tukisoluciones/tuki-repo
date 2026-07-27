@@ -8,7 +8,7 @@ import { prefersReducedMotion } from "@/lib/motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: 10, suffix: "+", label: "horas por semana que podés recuperar" },
+  { value: 10, suffix: "", label: "rubros con demo real para ver" },
   { value: 3, suffix: "", label: "días para ver tu demo funcionando" },
   { value: 100, suffix: "%", label: "personalizado, sin plantillas" },
   { value: 24, suffix: "/7", label: "tu negocio recibiendo consultas" },

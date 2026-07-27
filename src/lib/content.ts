@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Tuki",
-  slogan: "Te devolvemos las horas.",
-  tagline: "Vos ponés el negocio. Nosotros te devolvemos las horas.",
+  slogan: "Hacemos crecer tu negocio.",
+  tagline: "Vos ponés el negocio. Nosotros lo hacemos crecer.",
   description:
     "Agencia digital en Bahía Blanca: turnos online, páginas web, catálogos digitales con QR y automatizaciones para que tu negocio funcione sin que tengas que estar encima de todo.",
   whatsapp: "5492915134087",

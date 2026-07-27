@@ -22,7 +22,7 @@ export default function PageHeader({
         </span>
         <AnimatedLines
           lines={[title]}
-          className="mt-4 font-display text-5xl font-black uppercase leading-[1] tracking-tight sm:text-7xl"
+          className="mt-4 font-display text-5xl font-black uppercase leading-[1.15] tracking-tight sm:text-7xl"
         />
         {description && (
           <p className="mt-6 max-w-2xl text-base text-crema/70 sm:text-lg">

@@ -75,8 +75,8 @@ export default function Image() {
             letterSpacing: "-0.02em",
           }}
         >
-          <span>Te devolvemos</span>
-          <span style={{ color: "#0D3FE3" }}>las horas</span>
+          <span>Hacemos crecer</span>
+          <span style={{ color: "#0D3FE3" }}>tu negocio</span>
         </div>
 
         <div

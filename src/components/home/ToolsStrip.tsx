@@ -19,7 +19,7 @@ const TOOLS = [
 
 export default function ToolsStrip() {
   return (
-    <section className="bg-negro px-6 py-16 sm:px-8 sm:py-20">
+    <section className="bg-negro px-6 py-10 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <p className="text-center font-display text-sm font-bold uppercase tracking-[0.25em] text-crema/40">
           Trabajamos con

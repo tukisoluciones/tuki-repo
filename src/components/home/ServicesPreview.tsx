@@ -192,7 +192,7 @@ export default function ServicesPreview() {
   const [turnos, paginasWeb, catalogoQr, automatizaciones] = SERVICES;
 
   return (
-    <section id="servicios" className="bg-negro px-6 py-24 sm:px-8 sm:py-32">
+    <section id="servicios" className="bg-negro px-6 py-16 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="flex flex-wrap items-end justify-between gap-6">
@@ -201,7 +201,7 @@ export default function ServicesPreview() {
               Lo que hacemos
             </span>
             <h2 className="mt-4 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-crema sm:text-5xl">
-              Cuatro formas de<br className="hidden sm:block" /> devolverte horas.
+              Cuatro formas de<br className="hidden sm:block" /> hacer crecer tu negocio.
             </h2>
           </div>
           <Link

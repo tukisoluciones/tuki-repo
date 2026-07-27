@@ -12,16 +12,16 @@ const OPTIONS = [
     message: "Hola! Quiero una web para mi negocio.",
   },
   {
-    label: "Quiero turnos online",
-    message: "Hola! Quiero agregar turnos online a mi negocio.",
+    label: "Sistemas de turnos online",
+    message: "Hola! Quiero un sistema de turnos online para mi negocio.",
   },
   {
     label: "Necesito un sistema a medida",
     message: "Hola! Necesito un sistema o panel de gestión a medida para mi negocio.",
   },
   {
-    label: "Quiero aparecer mejor en Google y redes",
-    message: "Hola! Quiero mejorar la presencia de mi negocio en Google y redes sociales.",
+    label: "Quiero un catálogo digital con QR",
+    message: "Hola! Quiero un catálogo digital con QR para mi negocio.",
   },
 ];
 
