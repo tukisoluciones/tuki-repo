@@ -1,0 +1,47 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Security headers — applied to every response
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent clickjacking: blocks the site from being embedded in iframes
+    X-Frame-Options = "DENY"
+    # Prevent MIME-type sniffing: browser must respect the declared Content-Type
+    X-Content-Type-Options = "nosniff"
+    # Control referrer info sent to external sites
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Disable unused browser APIs (mic, camera, geolocation, payment)
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    # Force HTTPS for 2 years; include subdomains; eligible for preload list
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    # Disable the legacy XSS auditor (deprecated — causes more problems than it solves)
+    X-XSS-Protection = "0"
+    # Content Security Policy
+    # - script-src unsafe-inline: required by Next.js App Router bootstrap scripts
+    # - style-src unsafe-inline: required by Tailwind + GSAP inline style mutations
+    # - media-src self: for the /demos/*.mp4 videos
+    # - img-src https: allows OG images and any CDN assets
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';"
+
+# Cache headers
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, s-maxage=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, s-maxage=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/demos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

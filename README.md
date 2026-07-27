@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hora Libre — Sitio web
 
-## Getting Started
+Sitio web de **Hora Libre**, agencia digital de Bahía Blanca. Hecho con Next.js
+(App Router), Tailwind CSS, GSAP + ScrollTrigger, Lenis y React Three Fiber.
 
-First, run the development server:
+## Estructura
+
+- `/` — Inicio (hero 3D, propuesta de valor, servicios, herramientas, ejemplos, cómo trabajo)
+- `/servicios` — Detalle de los 6 servicios
+- `/trabajos` — Galería de 10 demos por rubro
+- `/contacto` — Formulario que abre WhatsApp con el mensaje prellenado
+
+Todo el contenido editable (textos, servicios, datos de contacto, demos) está
+centralizado en [`src/lib/content.ts`](src/lib/content.ts).
+
+## Desarrollo local
+
+Requiere Node 18.18+.
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrí [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Deploy a Netlify
 
-To learn more about Next.js, take a look at the following resources:
+El proyecto ya incluye `netlify.toml` con el plugin `@netlify/plugin-nextjs`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Opción 1 — desde el dashboard de Netlify:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Conectá este repositorio en Netlify ("Add new site" → "Import an existing project").
+2. Netlify detecta automáticamente el build command (`npm run build`) y el plugin de Next.js.
+3. Deploy.
 
-## Deploy on Vercel
+**Opción 2 — desde la terminal:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npx netlify-cli deploy --build --prod
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Dominio propio
+
+El sitio se publica por defecto en un subdominio `*.netlify.app`. Cuando se
+compre un dominio propio (por ejemplo `horalibre.com.ar`):
+
+1. En Netlify: **Site settings → Domain management → Add a domain**.
+2. Configurar los DNS según las instrucciones de Netlify.
+3. Actualizar `SITE.url` en [`src/lib/content.ts`](src/lib/content.ts) con el
+   nuevo dominio (se usa para SEO, sitemap, robots y la imagen de Open Graph).
+
+## SEO
+
+- Metadata (title/description/Open Graph) por página.
+- `src/app/sitemap.ts` y `src/app/robots.ts` generados automáticamente.
+- `src/app/opengraph-image.tsx` genera la imagen de previsualización para
+  redes sociales con la paleta de marca.
