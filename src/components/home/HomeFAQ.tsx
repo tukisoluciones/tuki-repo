@@ -3,32 +3,32 @@ import { SITE } from "@/lib/content";
 
 const FAQS = [
   {
-    q: "¿Cuánto tiempo tardan en entregar una página web?",
-    a: "Entregamos en 3 días hábiles desde que aprobás el diseño. Negocios como odontólogos, gimnasios o psicólogos tienen su web lista en menos de una semana.",
+    q: "¿Qué hace Tuki exactamente?",
+    a: "Somos una agencia digital: hacemos turnos y reservas online, páginas web, catálogos digitales con QR, software a medida y automatizaciones. No vendemos un solo producto de catálogo — armamos lo que tu negocio necesita para funcionar sin que tengas que estar encima de todo.",
   },
   {
-    q: "¿Cuánto sale una página web en Bahía Blanca?",
-    a: "Depende del proyecto. Ofrecemos una demo gratuita y sin compromiso para que veas cómo quedaría tu web antes de pagar. Pedila por WhatsApp y te enviamos el presupuesto.",
+    q: "No sé cuál de todo eso necesito, ¿cómo elijo?",
+    a: "No hace falta que lo sepas de antemano. Nos escribís, nos contás qué tarea te consume más tiempo o qué te gustaría resolver, y te decimos qué tiene sentido para tu negocio. Muchas veces es una combinación: por ejemplo, una web con turnos online, o un catálogo con QR más un panel para actualizarlo solo.",
   },
   {
-    q: "¿Trabajan con cualquier tipo de negocio?",
-    a: "Sí. Trabajamos con médicos, odontólogos, psicólogos, gimnasios, restaurantes, peluquerías, abogados, inmobiliarias y cualquier negocio que quiera crecer online en Bahía Blanca y alrededores.",
+    q: "¿Cuánto tarda un proyecto?",
+    a: "Depende de qué estemos armando. Una página web la entregamos en 3 días hábiles desde que aprobás el diseño, y un catálogo con QR puede estar listo incluso antes. Un sistema de turnos, software a medida o una automatización llevan un poco más porque dependen de cómo trabaja tu negocio hoy — te damos un tiempo estimado apenas hablamos.",
   },
   {
-    q: "¿Necesito saber de tecnología para tener una web?",
-    a: "No. Nosotros nos encargamos de todo: diseño, desarrollo, hosting y publicación. Solo tenés que darnos los datos de tu negocio y nosotros hacemos el resto.",
+    q: "¿Cuánto cuesta?",
+    a: "Cotizamos cada proyecto a medida, según el alcance. Para páginas web y catálogos con QR te mostramos una demo gratis y sin compromiso antes de que pagues nada; para software a medida y automatizaciones armamos la propuesta después de entender bien qué necesitás. Pedilo por WhatsApp y te respondemos con un presupuesto.",
   },
   {
-    q: "¿La web va a funcionar bien en celular?",
-    a: "Sí. Todas las webs que hacemos están optimizadas para celular (mobile-first), que es donde más del 80% de tus clientes potenciales te van a buscar.",
+    q: "¿Con qué tipos de negocio trabajan?",
+    a: "Con cualquiera que quiera dejar de hacer tareas a mano. Médicos, odontólogos, psicólogos, gimnasios, peluquerías y abogados suelen empezar por turnos online o su web; restaurantes y comercios, por el catálogo con QR; y negocios con procesos más particulares (stock, gestión, turnos complejos) nos piden software a medida o automatizaciones.",
   },
   {
-    q: "¿También hacen turnos online, catálogos con QR y software a medida?",
-    a: "Sí. Además del diseño web, ofrecemos sistemas de turnos y reservas, catálogos digitales con QR para gastronomía y comercio, software a medida y automatizaciones para tu negocio.",
+    q: "¿Necesito saber de tecnología?",
+    a: "No. Nosotros nos encargamos de todo: diseño, desarrollo, configuración y puesta en marcha. Vos solo tenés que contarnos cómo funciona tu negocio hoy; nosotros construimos la solución y te la dejamos lista para usar.",
   },
   {
-    q: "¿Qué pasa con mi web después de que me la entregan?",
-    a: "Incluimos soporte post-entrega para que tu web siga funcionando bien. Si necesitás hacer cambios o agregar algo, te ayudamos.",
+    q: "¿Qué pasa después de la entrega?",
+    a: "Incluimos soporte post-entrega para que todo siga funcionando bien. Si necesitás hacer cambios, sumar algo nuevo o ajustar cómo funciona, te ayudamos.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function HomeFAQ() {
           <p className="text-sm text-negro/60">
             ¿Tenés una pregunta que no está acá?{" "}
             <a
-              href={`https://wa.me/${SITE.whatsapp}?text=Hola!%20Tengo%20una%20consulta%20sobre%20los%20servicios%20de%20Hora%20Libre.`}
+              href={`https://wa.me/${SITE.whatsapp}?text=Hola!%20Tengo%20una%20consulta%20sobre%20los%20servicios%20de%20Tuki.`}
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-rojo underline-offset-2 hover:underline"

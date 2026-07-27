@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS, SITE } from "@/lib/content";
-import { whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/whatsapp";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -51,7 +51,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-crema/80">
               <li>
                 <a
-                  href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
+                  href={whatsappLink("Hola! Quiero ponerme en contacto con Tuki.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-rojo"

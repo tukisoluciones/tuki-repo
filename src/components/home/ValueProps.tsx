@@ -3,9 +3,9 @@ import { whatsappLink } from "@/lib/whatsapp";
 
 const ITEMS = [
   {
-    title: "Una web que vende sola",
+    title: "Tu presencia digital vende sola",
     description:
-      "Tu sitio muestra tus servicios, responde las dudas más comunes y manda al cliente directo a tu WhatsApp, las 24 horas.",
+      "Tu web o tu catálogo con QR muestra lo que ofrecés, responde las dudas más comunes y manda al cliente directo a tu WhatsApp, las 24 horas.",
   },
   {
     title: "Turnos sin fricción",
@@ -34,8 +34,8 @@ export default function ValueProps() {
             <p className="mt-6 text-base text-negro/70 sm:text-lg">
               Gran parte de tu día se va en cosas que un sistema bien armado
               podría hacer por vos: responder lo mismo una y otra vez,
-              coordinar turnos, ordenar el stock, armar contenido para tus
-              redes. Nosotros armamos esas piezas — vos te quedás con el
+              coordinar turnos, actualizar tu catálogo, ordenar el stock.
+              Nosotros armamos esas piezas — vos te quedás con el
               tiempo y con el negocio.
             </p>
             <a

@@ -1,6 +1,6 @@
-# Hora Libre — Sitio web
+# Tuki — Sitio web
 
-Sitio web de **Hora Libre**, agencia digital de Bahía Blanca. Hecho con Next.js
+Sitio web de **Tuki**, agencia digital de Bahía Blanca. Hecho con Next.js
 (App Router), Tailwind CSS, GSAP + ScrollTrigger, Lenis y React Three Fiber.
 
 ## Estructura
@@ -50,7 +50,7 @@ npx netlify-cli deploy --build --prod
 ### Dominio propio
 
 El sitio se publica por defecto en un subdominio `*.netlify.app`. Cuando se
-compre un dominio propio (por ejemplo `horalibre.com.ar`):
+compre un dominio propio (por ejemplo `tuki.com.ar`):
 
 1. En Netlify: **Site settings → Domain management → Add a domain**.
 2. Configurar los DNS según las instrucciones de Netlify.

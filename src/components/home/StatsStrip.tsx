@@ -8,10 +8,10 @@ import { prefersReducedMotion } from "@/lib/motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const STATS = [
-  { value: 7, suffix: "", label: "servicios disponibles" },
-  { value: 10, suffix: "", label: "demos reales a elegir" },
+  { value: 10, suffix: "+", label: "horas por semana que podés recuperar" },
+  { value: 3, suffix: "", label: "días para ver tu demo funcionando" },
   { value: 100, suffix: "%", label: "personalizado, sin plantillas" },
-  { value: 24, suffix: "/7", label: "tu web tomando consultas" },
+  { value: 24, suffix: "/7", label: "tu negocio recibiendo consultas" },
 ] as const;
 
 export default function StatsStrip() {

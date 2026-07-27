@@ -1,12 +1,12 @@
 "use client";
 
-import { whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/whatsapp";
+import { whatsappLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
   return (
     <a
-      href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
+      href={whatsappLink("Hola! Tengo una consulta para Tuki.")}
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick("floating-button")}

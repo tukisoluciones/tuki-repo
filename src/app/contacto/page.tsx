@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/shared/RevealOnScroll";
 import ContactForm from "@/components/contact/ContactForm";
 import { SITE } from "@/lib/content";
 import { stringifyJsonLd } from "@/lib/jsonld";
-import { whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/whatsapp";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Contacto — Pedí tu Demo Gratis",
@@ -70,7 +70,7 @@ export default function ContactoPage() {
                 Directo
               </h3>
               <a
-                href={whatsappLink(DEFAULT_WHATSAPP_MESSAGE)}
+                href={whatsappLink("Hola! Te escribo desde la página de contacto de Tuki.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 block font-display text-2xl font-extrabold tracking-tight transition-colors hover:text-rojo sm:text-3xl"

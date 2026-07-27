@@ -32,8 +32,8 @@ export default function Hero() {
         {/* Subtitle + CTAs */}
         <div className="mt-14 text-center sm:mt-16">
           <p className="mx-auto max-w-lg text-base leading-relaxed text-negro/50 sm:text-lg">
-            Webs, turnos online, paneles de gestión y tiendas. Todo hecho
-            a medida para tu negocio.
+            Webs que venden, turnos que se llenan solos, catálogos con QR
+            y procesos que dejan de robarte tiempo.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
