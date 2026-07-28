@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import MagneticButton from "@/components/shared/MagneticButton";
 import AnimatedLines from "@/components/shared/AnimatedLines";
@@ -9,22 +8,43 @@ import HeroLeadQuiz from "@/components/home/HeroLeadQuiz";
 import { whatsappLink } from "@/lib/whatsapp";
 import { trackWhatsAppClick } from "@/lib/analytics";
 
+function FloatingCard({
+  icon,
+  text,
+  className = "",
+}: {
+  icon: string;
+  text: string;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`absolute hidden items-center gap-2.5 rounded-2xl border border-crema/15 bg-crema/[0.07] px-4 py-3 shadow-2xl shadow-black/40 backdrop-blur-md motion-safe:animate-float lg:flex ${className}`}
+      aria-hidden="true"
+    >
+      <span className="text-lg leading-none">{icon}</span>
+      <span className="font-display text-sm font-bold text-crema">{text}</span>
+    </div>
+  );
+}
+
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-32 pb-24 text-crema sm:pt-36">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-negro pt-32 pb-24 text-crema sm:pt-36">
       <h1 className="sr-only">Agencia Digital en Bahía Blanca — Tuki</h1>
 
-      <Image
-        src="/fondo-valueprops.jpg"
-        alt=""
-        fill
-        priority
-        className="object-cover"
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-negro/80" aria-hidden="true" />
+      {/* Fondo tipo viñeta, sin foto */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <div className="absolute left-1/2 top-[-10%] h-[70vh] w-[70vh] -translate-x-1/2 rounded-full bg-rojo/25 blur-[140px]" />
+        <div className="absolute bottom-[-15%] right-[-10%] h-[50vh] w-[50vh] rounded-full bg-rojo/15 blur-[130px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-negro/40 via-negro/70 to-negro" />
+      </div>
 
       <ParticleCanvas colors={["#0d3fe3", "#f2f1ed"]} count={25} className="z-[1]" />
+
+      <FloatingCard icon="✅" text="Turno confirmado" className="left-[3%] top-[20%] -rotate-3" />
+      <FloatingCard icon="💬" text="Nuevo mensaje de cliente" className="right-[2%] top-[46%] rotate-2" />
+      <FloatingCard icon="📈" text="+40% consultas" className="bottom-[10%] left-[4%] rotate-3" />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-6 sm:px-8">
         {/* Headline */}
