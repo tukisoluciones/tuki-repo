@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import MagneticButton from "@/components/shared/MagneticButton";
 import AnimatedLines from "@/components/shared/AnimatedLines";
@@ -10,10 +11,20 @@ import { trackWhatsAppClick } from "@/lib/analytics";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#f6f5f1] pt-32 pb-24 text-negro sm:pt-36">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-32 pb-24 text-crema sm:pt-36">
       <h1 className="sr-only">Agencia Digital en Bahía Blanca — Tuki</h1>
 
-      <ParticleCanvas colors={["#0d3fe3", "#141414"]} count={25} className="z-[1]" />
+      <Image
+        src="/fondo-valueprops.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-negro/80" aria-hidden="true" />
+
+      <ParticleCanvas colors={["#0d3fe3", "#f2f1ed"]} count={25} className="z-[1]" />
 
       <div className="relative z-10 mx-auto w-full max-w-5xl px-6 sm:px-8">
         {/* Headline */}
@@ -25,13 +36,13 @@ export default function Hero() {
               <><span key="r" className="text-rojo">sistemas</span> que hacen</>,
               "funcionar tu negocio.",
             ]}
-            className="font-display text-[11vw] font-black leading-[1.15] tracking-tight sm:text-[7vw] lg:text-[5.2rem]"
+            className="font-display text-[11vw] font-black leading-[1.15] tracking-tight text-crema sm:text-[7vw] lg:text-[5.2rem]"
           />
         </div>
 
         {/* Subtitle + CTAs */}
         <div className="mt-14 text-center sm:mt-16">
-          <p className="mx-auto max-w-lg text-base leading-relaxed text-negro/50 sm:text-lg">
+          <p className="mx-auto max-w-lg text-base leading-relaxed text-crema/70 sm:text-lg">
             Webs que venden, turnos que se llenan solos, catálogos con QR
             y procesos que dejan de robarte tiempo.
           </p>
@@ -48,7 +59,7 @@ export default function Hero() {
             </MagneticButton>
             <Link
               href="/servicios"
-              className="inline-flex items-center rounded-full border border-negro/20 px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-negro transition-colors hover:border-negro/40 hover:bg-negro/5"
+              className="inline-flex items-center rounded-full border border-crema/30 px-8 py-4 font-display text-sm font-bold uppercase tracking-wide text-crema transition-colors hover:border-crema/60 hover:bg-crema/10"
             >
               Ver servicios
             </Link>
