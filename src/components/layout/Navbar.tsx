@@ -8,6 +8,7 @@ import { NAV_LINKS } from "@/lib/content";
 import { whatsappLink, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/whatsapp";
 import MagneticButton from "@/components/shared/MagneticButton";
 import { trackWhatsAppClick } from "@/lib/analytics";
+import { scrollToTop } from "@/components/shared/SmoothScrollProvider";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -16,7 +17,17 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4 sm:px-6 sm:pt-6">
       <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-negro/95 px-4 py-2.5 shadow-lg shadow-black/20 sm:px-6">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="flex items-center gap-2"
+          onClick={(e) => {
+            setOpen(false);
+            if (pathname === "/") {
+              e.preventDefault();
+              scrollToTop();
+            }
+          }}
+        >
           <Image
             src="/logo-white.png"
             alt="Tuki"
@@ -32,6 +43,12 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={(e) => {
+                if (pathname === link.href) {
+                  e.preventDefault();
+                  scrollToTop();
+                }
+              }}
               className={`font-display text-sm font-semibold tracking-wide uppercase transition-colors ${
                 pathname === link.href
                   ? "text-rojo"
@@ -93,7 +110,13 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              onClick={() => setOpen(false)}
+              onClick={(e) => {
+                setOpen(false);
+                if (pathname === link.href) {
+                  e.preventDefault();
+                  scrollToTop();
+                }
+              }}
               className={`rounded-xl px-4 py-3 font-display text-sm font-semibold uppercase tracking-wide transition-colors ${
                 pathname === link.href
                   ? "bg-rojo/10 text-rojo"

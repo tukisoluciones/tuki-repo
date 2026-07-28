@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { NAV_LINKS, SITE } from "@/lib/content";
 import { whatsappLink } from "@/lib/whatsapp";
+import { scrollToTop } from "@/components/shared/SmoothScrollProvider";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const pathname = usePathname();
 
   return (
     <footer className="bg-negro text-crema">
@@ -35,6 +40,12 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    onClick={(e) => {
+                      if (pathname === link.href) {
+                        e.preventDefault();
+                        scrollToTop();
+                      }
+                    }}
                     className="text-sm text-crema/80 transition-colors hover:text-rojo"
                   >
                     {link.label}

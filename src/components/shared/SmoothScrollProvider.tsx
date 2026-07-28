@@ -11,6 +11,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 let lenisInstance: Lenis | null = null;
 
+export function scrollToTop() {
+  if (lenisInstance) {
+    lenisInstance.scrollTo(0, { duration: 1.2 });
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+
 export default function SmoothScrollProvider({
   children,
 }: {
