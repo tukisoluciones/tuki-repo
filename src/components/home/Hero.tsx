@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import MagneticButton from "@/components/shared/MagneticButton";
 import AnimatedLines from "@/components/shared/AnimatedLines";
@@ -33,11 +34,17 @@ export default function Hero() {
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-negro pt-32 pb-24 text-crema sm:pt-36">
       <h1 className="sr-only">Agencia Digital en Bahía Blanca — Tuki</h1>
 
-      {/* Fondo tipo viñeta, sin foto */}
-      <div className="absolute inset-0" aria-hidden="true">
-        <div className="absolute left-1/2 top-[-10%] h-[70vh] w-[70vh] -translate-x-1/2 rounded-full bg-rojo/25 blur-[140px]" />
-        <div className="absolute bottom-[-15%] right-[-10%] h-[50vh] w-[50vh] rounded-full bg-rojo/15 blur-[130px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-negro/40 via-negro/70 to-negro" />
+      {/* Fondo: foto difuminada, abstraída en manchas de luz */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+        <Image
+          src="/hero-bg-blur.jpg"
+          alt=""
+          fill
+          priority
+          className="scale-125 object-cover blur-[90px]"
+        />
+        <div className="absolute inset-0 bg-negro/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-negro/20 via-negro/50 to-negro" />
       </div>
 
       <ParticleCanvas colors={["#0d3fe3", "#f2f1ed"]} count={25} className="z-[1]" />
