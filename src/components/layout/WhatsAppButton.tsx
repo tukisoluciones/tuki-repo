@@ -11,9 +11,9 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       onClick={() => trackWhatsAppClick("floating-button")}
       aria-label="Escribinos por WhatsApp"
-      className="group fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-rojo text-crema shadow-xl shadow-rojo/30 transition-transform hover:scale-105 sm:bottom-8 sm:right-8"
+      className="group fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-cta text-crema shadow-xl shadow-cta/30 transition-transform hover:scale-105 sm:bottom-8 sm:right-8"
     >
-      <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-rojo/50 motion-reduce:animate-none" />
+      <span className="absolute inset-0 -z-10 animate-ping rounded-full bg-cta/50 motion-reduce:animate-none" />
       <svg
         viewBox="0 0 32 32"
         fill="currentColor"
