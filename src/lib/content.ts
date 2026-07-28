@@ -114,14 +114,14 @@ export type Demo = {
 };
 
 export const DEMOS: Demo[] = [
-  { slug: "psicologo", file: "/demos/web_psicologo.mp4?v=2", rubro: "Psicólogo", accion: "Reserva de turno" },
-  { slug: "abogado", file: "/demos/web_abogado.mp4?v=2", rubro: "Abogado", accion: "Formulario de consulta" },
-  { slug: "estetica", file: "/demos/web_estetica.mp4?v=2", rubro: "Centro de estética", accion: "Reserva de turno" },
-  { slug: "medico", file: "/demos/web_medico.mp4?v=2", rubro: "Médico", accion: "Reserva de turno" },
-  { slug: "peluqueria", file: "/demos/web_peluqueria.mp4?v=2", rubro: "Peluquería", accion: "Contacto por WhatsApp" },
-  { slug: "odontologo", file: "/demos/web_odontologo.mp4?v=2", rubro: "Odontólogo", accion: "Reserva de turno" },
-  { slug: "gimnasio", file: "/demos/web_gimnasio.mp4?v=2", rubro: "Gimnasio", accion: "Formulario de inscripción" },
-  { slug: "veterinaria", file: "/demos/web_veterinaria.mp4?v=2", rubro: "Veterinaria", accion: "Contacto por WhatsApp" },
-  { slug: "inmobiliaria", file: "/demos/web_inmobiliaria.mp4?v=2", rubro: "Inmobiliaria", accion: "Formulario de consulta" },
-  { slug: "restaurante", file: "/demos/web_restaurante.mp4?v=2", rubro: "Restaurante", accion: "Contacto por WhatsApp" },
+  { slug: "psicologo", file: "/demos/web_psicologo.mp4?v=3", rubro: "Psicólogo", accion: "Reserva de turno" },
+  { slug: "abogado", file: "/demos/web_abogado.mp4?v=3", rubro: "Abogado", accion: "Formulario de consulta" },
+  { slug: "estetica", file: "/demos/web_estetica.mp4?v=3", rubro: "Centro de estética", accion: "Reserva de turno" },
+  { slug: "medico", file: "/demos/web_medico.mp4?v=3", rubro: "Médico", accion: "Reserva de turno" },
+  { slug: "peluqueria", file: "/demos/web_peluqueria.mp4?v=3", rubro: "Peluquería", accion: "Contacto por WhatsApp" },
+  { slug: "odontologo", file: "/demos/web_odontologo.mp4?v=3", rubro: "Odontólogo", accion: "Reserva de turno" },
+  { slug: "gimnasio", file: "/demos/web_gimnasio.mp4?v=3", rubro: "Gimnasio", accion: "Formulario de inscripción" },
+  { slug: "veterinaria", file: "/demos/web_veterinaria.mp4?v=3", rubro: "Veterinaria", accion: "Contacto por WhatsApp" },
+  { slug: "inmobiliaria", file: "/demos/web_inmobiliaria.mp4?v=3", rubro: "Inmobiliaria", accion: "Formulario de consulta" },
+  { slug: "restaurante", file: "/demos/web_restaurante.mp4?v=3", rubro: "Restaurante", accion: "Contacto por WhatsApp" },
 ];

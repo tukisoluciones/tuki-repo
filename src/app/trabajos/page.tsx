@@ -67,6 +67,15 @@ export default function TrabajosPage() {
       />
 
       <section className="bg-crema px-6 py-16 sm:px-8 sm:py-24">
+        <div className="mx-auto mb-10 flex max-w-6xl items-center justify-center gap-3">
+          <span className="font-display text-lg font-black tracking-tight text-negro">
+            TUKI
+          </span>
+          <span className="h-4 w-px bg-negro/20" aria-hidden="true" />
+          <span className="font-display text-sm font-bold uppercase tracking-[0.25em] text-negro/50">
+            Webs
+          </span>
+        </div>
         <RevealOnScroll
           stagger={0.08}
           className="mx-auto grid max-w-6xl grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4"
